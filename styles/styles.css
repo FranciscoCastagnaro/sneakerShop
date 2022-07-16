@@ -114,7 +114,30 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 40rem;  
+    height: 40rem;
+    
+    animation-name: bg-move;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-delay: 1s;
+}
+
+@keyframes bg-move {
+    0%{
+        background-position: center;
+    }
+    25%{
+        background-position: top;
+    }
+    50%{
+        background-position: center;
+    }
+    75%{
+        background-position: bottom;
+    }
+    100%{
+        background-position: center;
+    }
 }
 
 .products__title{
