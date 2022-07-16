@@ -206,6 +206,10 @@
     color: white;
 }
 
+.pie-pagina__menu__lista a:hover{
+    color: #750C00;
+}
+
 .pie-pagina__redes img{
     width: 50px;
 }
@@ -219,7 +223,13 @@
     align-items: center;
     gap: 15px;
     background-image: url('../img/hoodie-background.jpg');
+    background-size: cover;
     padding: 25px;
+
+    animation-name: bg-move;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-delay: 1s;
 }
 
 .product-display h2{
