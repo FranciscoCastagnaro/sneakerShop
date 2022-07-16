@@ -42,10 +42,17 @@
     display: inline-block;
 }
 
+
 .encabezado__main-menu__lista li a{
     text-decoration: none;
     color: black;
     font-weight: bolder;
+}
+
+.encabezado__main-menu__lista li a:hover{
+
+    color:#750C00;
+
 }
 
 /* SECCIÓN HERO */
@@ -74,7 +81,28 @@
     background-color: #750C00;
     text-align: center; 
     padding: 20px;
+
+    animation-name: dance;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 1s;
 }
+
+@keyframes dance {
+    0%{
+        color: white;
+        background-color: #750C00;
+    }
+    50%{
+        color: #750C00;
+        background-color: white;  
+    }
+    100%{
+        color: white;
+        background-color: #750C00;
+    }
+}
+
 
 /* SECCIÓN PRODUCTOS */
 
@@ -345,6 +373,9 @@
 .contact__form input[type=submit]{
     margin-bottom: 10px;
 }
+
+
+
 
 /* MEDIA QUERYS */
 
