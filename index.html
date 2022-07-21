@@ -29,10 +29,10 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  <a class="nav-link" href="#">Productos</a>
-                  <a class="nav-link" href="#">Nosotros</a>
-                  <a class="nav-link" href="#">Contacto</a>
-                  <a class="nav-link" href="#">Marcas</a>
+                  <a class="nav-link" href="./pages/productos.html">Productos</a>
+                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  <a class="nav-link" href="./pages/marcas.html">Marcas</a>
                 </div>
               </div>
             </div>
@@ -55,75 +55,72 @@
           </div>
 
         <!-- SECCIÓN 2 -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/nike-dunk-panda.jpg" class="d-block w-100" alt="nike-dunk-panda">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/nike-dunk-chicago.jpg" class="d-block w-100" alt="nike-dunk-chicago">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/nike-jordan-blue.jpg" class="d-block w-100" alt="nike-jordan-blue">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/Nike-Sb-Dunk-Low-Black-White.jpg" class="d-block w-100" alt="nike-dunk-panda">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>NIKE SB Dunk Low PANDA</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/nike-dunk-low-mujer.jpg" class="d-block w-100" alt="nike-dunk-mujer">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>NIKE SB Dunk Low WHITE</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/nike-dunk-low-rose-whisper.jpg" class="d-block w-100" alt="nike-dunk-rose">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>NIKE SB Dunk Low ROSE</h5>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+          </div>    
+        </div>
     </main>
 
 
     <!-- PIE DE PÁGINA/FOOTER -->
-    <footer class="pie-pagina">
-        <p class="pie-pagina__parrafo">SNEAKER SHOP - Todos los derechos reservados</p>
+    <div class="footer container-fluid row mx-0">
 
-        <!-- MENÚ -->
-        <nav class="pie-pagina__menu">
-            <ul class="pie-pagina__menu__lista">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./pages/productos.html">PRODUCTOS</a></li>
-                <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                <li><a href="./pages/marcas.html">MARCAS</a></li>
-            </ul>
-        </nav>
-
-        <!-- REDES SOCIALES -->
-        <!-- Todavía no estan disponibles los links de redes! -->
-        <div class="pie-pagina__redes">
-            <a href="#">
-                <img src="./img/facebook-logo.png" alt="FACEBOOK">
-            </a>
-            <a href="#">
-                <img src="./img/instagram-logo.png" alt="INSTAGRAM">
-            </a>
-            <a href="#">
-                <img src="./img/twitter-logo.png" alt="TWITTER">
-            </a>
+        <!-- MENU -->
+        <div class="col-4">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/marcas.html">MARCAS</a>
+            </li>
+          </ul>
         </div>
 
+        <div class="col-4 d-flex flex-column justify-content-center text-center">
+          <p class="pie-pagina__parrafo">SNEAKER SHOP - Todos los derechos reservados</p>
+        </div>
 
-    </footer>
+        <!-- REDES SOCIALES -->
+        <div class="col-4 d-flex justify-content-center align-items-center">
+          <img src="./img/facebook-logo.png" class="d-block rounded float-end" alt="FACEBOOK">
+          <img src="./img/instagram-logo.png" class="d-block rounded float-end" alt="INSTAGRAM">
+          <img src="./img/twitter-logo.png" class="d-block rounded float-end" alt="TWITTER">
+        </div>
+
+    </div>
 
 <!-- BOOTSTRAP - JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

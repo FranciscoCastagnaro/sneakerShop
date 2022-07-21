@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-image: url("../img/hoodie-background.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+.rounded{
+    width: 15%;
+}
+
+.footer{
+    background-image: url("../img/footer-background.jpg");
+    background-position: center;
+    background-size: contain;
+    height: auto;
+}
+
+.footer p{
+    color: white;
+}
+
+.nav li a{
+    color: red;
+}
+
+.nav li a:hover{
+    color: white;
+}
+
+.contenido-principal{
+    background-image: url("../img/hoodie-background.jpg");
+    background-position: center;
+    background-size: contain;
+}
