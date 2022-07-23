@@ -31,6 +31,10 @@
     margin-right: 5%;
 }
 
+#main-logo:hover{
+    width: 23%;
+}
+
 .encabezado__main-menu__lista{
     display: flex;
     list-style: none;
