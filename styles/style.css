@@ -17,7 +17,7 @@
   height: 15vh; }
   .encabezado__logo {
     margin-left: 3%; }
-    .encabezado__logoimg {
+    .encabezado__logo img {
       width: 20%; }
   .encabezado__main-menu {
     margin-right: 5%; }
@@ -26,13 +26,13 @@
       list-style: none;
       justify-content: space-between;
       gap: 30px; }
-      .encabezado__main-menu__listali {
+      .encabezado__main-menu__lista li {
         display: inline-block; }
-        .encabezado__main-menu__listalia {
+        .encabezado__main-menu__lista li a {
           text-decoration: none;
           color: black;
           font-weight: bolder; }
-          .encabezado__main-menu__listalia:hover {
+          .encabezado__main-menu__lista li a:hover {
             color: #750C00; }
 
 /* SECCIÓN HERO */
@@ -89,7 +89,7 @@
       justify-content: center;
       align-items: center;
       gap: 10%; }
-    .products__carouselimg {
+    .products__carousel img {
       width: 300px;
       border: 2px solid #750C00; }
 
@@ -121,10 +121,10 @@
     display: flex; }
     .pie-pagina__menu__lista {
       list-style-type: none; }
-      .pie-pagina__menu__listaa {
+      .pie-pagina__menu__lista a {
         text-decoration: none;
         color: white; }
-        .pie-pagina__menu__listaa:hover {
+        .pie-pagina__menu__lista a:hover {
           color: #750C00; }
 
 /* -- PÁGINA PRODUCTOS -- */
@@ -141,7 +141,7 @@
   animation-iteration-count: infinite;
   animation-duration: 20s;
   animation-delay: 1s; }
-  .product-displayh2 {
+  .product-display h2 {
     font-size: xx-large;
     margin: 50px 0 50px 0;
     color: white;
@@ -154,7 +154,7 @@
     grid-template-rows: auto;
     grid-template-areas: 'prod1 prod2 prod3' 'prod4 prod5 prod6';
     gap: 15px; }
-  .product-displayli {
+  .product-display li {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -164,7 +164,7 @@
     padding: 15px;
     border-radius: 20px;
     gap: 5px; }
-  .product-displayimg {
+  .product-display img {
     width: 100%; }
 
 /*
@@ -200,7 +200,7 @@
   align-items: center;
   background-image: url("../img/hoodie-background.jpg");
   height: 85vh; }
-  .nosotros-infoimg {
+  .nosotros-info img {
     height: inherit; }
   .nosotros-info__texto {
     display: flex;
@@ -220,7 +220,7 @@
   background-image: url("../img/hoodie-background.jpg");
   padding: 50px;
   height: 85vh; }
-  .brand-infoh2 {
+  .brand-info h2 {
     font-size: x-large;
     margin: 50px 0 50px 0;
     color: white;
@@ -232,7 +232,7 @@
     list-style: none;
     gap: 25px;
     align-items: center; }
-    .brand-info__displayimg {
+    .brand-info__display img {
       background-color: #360500;
       border: 2px solid #750C00;
       width: 600px; }
@@ -248,29 +248,29 @@
   .contact__form {
     background-color: #360500;
     padding: 25px; }
-    .contact__formfieldset {
+    .contact__form fieldset {
       padding: 25px;
       display: flex;
       flex-direction: column; }
-    .contact__forminput[type=text] {
+    .contact__form input[type=text] {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
       box-sizing: border-box;
       margin-bottom: 25px; }
-    .contact__forminput[type=email] {
+    .contact__form input[type=email] {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
       box-sizing: border-box;
       margin-bottom: 25px; }
-    .contact__formtextarea {
+    .contact__form textarea {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
       box-sizing: border-box;
       margin-bottom: 25px; }
-    .contact__forminput[type=submit] {
+    .contact__form input[type=submit] {
       margin-bottom: 10px; }
 
 /* MEDIA QUERYS */
@@ -292,7 +292,7 @@
     .products__carousel__display {
       flex-direction: column;
       gap: 20px; }
-      .products__carousel__displayimg {
+      .products__carousel__display img {
         width: 200px; } }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -317,7 +317,7 @@
     .products__carousel__display {
       flex-direction: column;
       gap: 20px; }
-      .products__carousel__displayimg {
+      .products__carousel__display img {
         width: 200px; } }
 
 @media only screen and (min-width: 300px) and (max-width: 479px) {
@@ -351,7 +351,7 @@
     .products__carousel__display {
       flex-direction: column;
       gap: 20px; }
-      .products__carousel__displayimg {
+      .products__carousel__display img {
         width: 200px; }
   .products {
     height: 55rem; } }
