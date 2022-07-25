@@ -1,0 +1,583 @@
+@import "variables";
+
+/* SELECTOR UNIVERSAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+
+/* -- PÁGINA HOME-- */
+/* SECCIÓN ENCABEZADO */
+
+
+.encabezado{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+
+    &__logo{
+        margin-left: 3%;
+
+        &img{
+            width: 20%;
+        }
+
+    }
+
+    &__main-menu{
+        margin-right: 5%;
+
+        &__lista{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            gap: 30px;
+
+            &li{
+                display: inline-block;
+
+                &a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bolder;
+                    &:hover{
+                        color: $color-1;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+/* SECCIÓN HERO */
+
+.hero{
+    height: 85vh;
+    background-image: url("../img/air-jordan-mid-1-sneakers.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    &__articulo{
+        width: 50%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &__texto{
+            color: white;
+            background-color: $color-1;
+            text-align: center; 
+            padding: 20px;
+        
+            animation-name: dance;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+    }
+}
+
+
+/* SECCIÓN PRODUCTOS */
+
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/crimson-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+    
+    animation-name: bg-move;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-delay: 1s;
+
+    &__title{
+        text-align: center;
+        color: white;
+        margin-bottom: 80px;
+    }
+
+    &__carousel{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
+
+        &__display{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            gap: 10%;
+        }
+
+        &img{
+            width: 300px;
+            border: 2px solid $color-1;
+        }
+
+    }
+}
+
+.btn{
+    background-color: $color-2;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+/* PIE DE PÁGINA */
+
+.pie-pagina{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1% 0 1% 0;
+    background-image: url('../img/footer-background.jpg');
+
+    &__parrafo{
+        text-align: center;
+        color: white;
+    }
+
+    &__redes img{
+        width: 50px;
+    }
+
+    &__menu{
+        order: -1;
+        display: flex;
+
+        &__lista{
+            list-style-type: none;
+
+            &a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $color-1;
+                }
+            }
+        }
+    }
+
+}
+
+/* -- PÁGINA PRODUCTOS -- */
+/* Product Display */
+
+.product-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-image: url('../img/hoodie-background.jpg');
+    background-size: cover;
+    padding: 25px;
+
+    animation-name: bg-move;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-delay: 1s;
+
+    &h2{
+        font-size: xx-large;
+        margin: 50px 0 50px 0;
+        color: white;
+        background-color: $color-2;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    &__lista{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 'prod1 prod2 prod3'
+                             'prod4 prod5 prod6';
+        gap: 15px;
+    }
+
+    &li{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        background-color: $color-2;
+        padding: 15px;
+        border-radius: 20px;
+        gap: 5px;
+    }
+
+    &img{
+        width: 100%;
+    }
+
+}
+/*
+.product-display__lista{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+*/
+#prod1{
+    grid-area: prod1
+}
+
+#prod2{
+    grid-area: prod2;
+}
+
+#prod3{
+    grid-area: prod3;
+}
+
+#prod4{
+    grid-area: prod4;
+}
+
+#prod5{
+    grid-area: prod5;
+}
+
+#prod6{
+    grid-area: prod6;
+}
+
+/* --PÁGINA NOSOTROS-- */
+
+.nosotros-info{
+    display: flex;
+    align-items: center;
+    background-image: url('../img/hoodie-background.jpg');
+    height: 85vh;
+
+    &img{
+        height: inherit;
+    }
+
+    &__texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        color: white;
+        background-color: $color-2;
+        text-align: center;
+        padding: 20px 0 30px 0;
+    }
+
+}
+
+/* --PÁGINA MARCAS-- */
+
+.brand-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/hoodie-background.jpg');
+    padding: 50px;
+    height: 85vh;
+
+    &h2{
+        font-size: x-large;
+        margin: 50px 0 50px 0;
+        color: white;
+        background-color: $color-2;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    &__display{
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        align-items: center;
+
+        &img{
+            background-color: $color-2;
+            border: 2px solid $color-1;
+            width: 600px;
+        }
+
+    }
+
+}
+
+/* --PÁGINA CONTACTO-- */
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/hoodie-background.jpg');
+    height: 85vh;
+    color: white;
+
+    &__form{
+        background-color: $color-2;
+        padding: 25px;
+
+        &fieldset{
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+        }
+
+        &input[type=email]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+        }
+
+        &textarea{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+        }
+
+        &input[type=submit]{
+            margin-bottom: 10px;
+        }
+
+    }
+    
+}
+
+/* MEDIA QUERYS */
+
+@media only screen and (min-width:768px) and (max-width:900px){
+
+    .products{
+        height: 55rem;
+
+        &__lista{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 'prod1 prod2'
+                                 'prod3 prod4'
+                                 'prod5 prod6';
+        }
+
+    }
+    
+    .encabezado__logo img{
+        width: 45%;
+    }
+
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .products__carousel{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        &__display{
+            flex-direction: column;
+            gap: 20px;
+
+            &img{
+                width: 200px;
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width:480px) and (max-width:767px){
+
+    .products{
+        height: 55rem;
+
+        &__lista{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: 'prod1' 
+                                 'prod2'
+                                 'prod3' 
+                                 'prod4'
+                                 'prod5' 
+                                 'prod6';
+        }
+
+    }
+
+    .pie-pagina{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .encabezado__logo img{
+        width: 70%;
+    }
+
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .products__carousel{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        &__display{
+            flex-direction: column;
+            gap: 20px;
+
+            &img{
+                width: 200px;
+            }
+
+        }
+
+    }
+
+
+}
+
+@media only screen and (min-width:300px) and (max-width:479px){
+
+    .product-display{
+        text-align: center;
+
+        &__lista{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas: 'prod1' 
+                                 'prod2'
+                                 'prod3' 
+                                 'prod4'
+                                 'prod5' 
+                                 'prod6';
+        }
+
+    }
+
+    .pie-pagina{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 10px 0 10px 0;
+    }
+
+    .encabezado__main-menu__lista{
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    
+    .encabezado__logo img{
+        width: 50%;
+    }
+
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        background-size: auto;
+
+        &__articulo{
+            gap: 15px;
+        }
+
+    }
+
+    .products__carousel{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        &__display{
+            flex-direction: column;
+            gap: 20px;
+
+            &img{
+                width: 200px;
+            }
+
+        }
+
+    }
+
+    .products{
+        height: 55rem;
+    }
+
+
+}
+
+/* ANIMACIONES/TRANSICIONES */
+
+@keyframes bg-move {
+    0%{
+        background-position: center;
+    }
+    25%{
+        background-position: top;
+    }
+    50%{
+        background-position: center;
+    }
+    75%{
+        background-position: bottom;
+    }
+    100%{
+        background-position: center;
+    }
+}
+
+@keyframes dance {
+    0%{
+        color: white;
+        background-color: $color-1;
+    }
+    50%{
+        color: $color-1;
+        background-color: white;  
+    }
+    100%{
+        color: white;
+        background-color: $color-1;
+    }
+}
