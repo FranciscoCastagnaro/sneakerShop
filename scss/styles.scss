@@ -365,7 +365,16 @@
 
 /* MEDIA QUERYS */
 
-@media only screen and (min-width:768px) and (max-width:900px){
+$media-widths: (
+    "screen1": 768px,
+    "screen2": 900px, 
+    "tablet1": 480px, 
+    "tablet2": 767px,
+    "mobile1": 300px,
+    "mobile2": 479px
+    );
+
+@media only screen and (min-width: map-get($map: $media-widths, $key : screen1)) and (max-width: map-get($map: $media-widths, $key : screen2)){
 
     .products{
         height: 55rem;
@@ -407,7 +416,7 @@
 
 }
 
-@media only screen and (min-width:480px) and (max-width:767px){
+@media only screen and (min-width: map-get($map: $media-widths, $key : tablet1)) and (max-width: map-get($map: $media-widths, $key : tablet2)){
 
     .products{
         height: 55rem;
@@ -459,7 +468,7 @@
 
 }
 
-@media only screen and (min-width:300px) and (max-width:479px){
+@media only screen and (min-width: map-get($map: $media-widths, $key : mobile1)) and (max-width: map-get($map: $media-widths, $key : mobile2)){
 
     .product-display{
         text-align: center;
