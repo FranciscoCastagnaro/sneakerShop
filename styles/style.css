@@ -141,7 +141,7 @@
   animation-iteration-count: infinite;
   animation-duration: 20s;
   animation-delay: 1s; }
-  .product-display h2 {
+  .product-display h1 {
     font-size: xx-large;
     margin: 50px 0 50px 0;
     color: white;
@@ -195,12 +195,12 @@
   grid-area: prod6; }
 
 /* --PÁGINA NOSOTROS-- */
-.nosotros-info {
+.nosotros-info, .brand-info {
   display: flex;
   align-items: center;
   background-image: url("../img/hoodie-background.jpg");
   height: 85vh; }
-  .nosotros-info img {
+  .nosotros-info img, .brand-info img {
     height: inherit; }
   .nosotros-info__texto {
     display: flex;
@@ -214,13 +214,10 @@
 
 /* --PÁGINA MARCAS-- */
 .brand-info {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   background-image: url("../img/hoodie-background.jpg");
-  padding: 50px;
-  height: 85vh; }
-  .brand-info h2 {
+  padding: 50px; }
+  .brand-info h1 {
     font-size: x-large;
     margin: 50px 0 50px 0;
     color: white;

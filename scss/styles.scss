@@ -201,7 +201,7 @@
     animation-duration: 20s;
     animation-delay: 1s;
 
-    & h2{
+    & h1{
         font-size: xx-large;
         margin: 50px 0 50px 0;
         color: white;
@@ -245,28 +245,11 @@
     gap: 20px;
 }
 */
-#prod1{
-    grid-area: prod1
-}
 
-#prod2{
-    grid-area: prod2;
-}
-
-#prod3{
-    grid-area: prod3;
-}
-
-#prod4{
-    grid-area: prod4;
-}
-
-#prod5{
-    grid-area: prod5;
-}
-
-#prod6{
-    grid-area: prod6;
+@for $i from 1 through 6 {
+    #prod#{$i} {
+        grid-area: prod#{$i};
+    } 
 }
 
 /* --PÁGINA NOSOTROS-- */
@@ -297,14 +280,13 @@
 /* --PÁGINA MARCAS-- */
 
 .brand-info{
-    display: flex;
+
+    @extend .nosotros-info;
     flex-direction: column;
-    align-items: center;
     background-image: url('../img/hoodie-background.jpg');
     padding: 50px;
-    height: 85vh;
 
-    & h2{
+    & h1{
         font-size: x-large;
         margin: 50px 0 50px 0;
         color: white;
