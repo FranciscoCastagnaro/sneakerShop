@@ -11,3 +11,6 @@
     <li>NodeJS</li>
     <li>SASS</li>
 </ul>
+
+<h2>Web alojada en Vercel</h2>
+<p><a>https://sneaker-shop-mu.vercel.app/index.html</a></p>
