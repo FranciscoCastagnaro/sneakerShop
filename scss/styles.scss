@@ -386,6 +386,13 @@ $media-widths: (
                                  'prod5 prod6';
         }
 
+        &-display__lista{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 'prod1 prod2'
+                                 'prod3 prod4'
+                                 'prod5 prod6';
+        }
+
     }
     
     .encabezado__logo img{
@@ -414,6 +421,40 @@ $media-widths: (
 
     }
 
+    .nosotros-info{
+
+        height: 100vh;
+
+        &__texto p{
+            margin: 30px 10px;
+        }
+
+        & img{
+            object-fit: cover;
+            width: 50%;
+            height: 100vh;
+        }
+
+    }
+
+    .brand-info{
+        &__display{
+            
+            flex-direction: column;
+            justify-content: center;
+
+            & li{
+                width: 100%;
+                text-align: center;
+            }
+
+            & img{
+                height: 100%;
+            }
+
+        }
+    }
+
 }
 
 @media only screen and (min-width: map-get($map: $media-widths, $key : tablet1)) and (max-width: map-get($map: $media-widths, $key : tablet2)){
@@ -439,8 +480,19 @@ $media-widths: (
         gap: 30px;
     }
 
-    .encabezado__logo img{
-        width: 70%;
+    .encabezado{
+    
+        &__logo img{
+            object-fit: contain;
+            width: 100px;
+            height: 100%;
+        }
+
+        &__main-menu__lista{
+            text-align: center;
+            flex-direction: column;
+            gap: 13px;
+        }
     }
 
     .hero{
@@ -463,6 +515,53 @@ $media-widths: (
 
         }
 
+    }
+
+    
+    .nosotros-info{
+
+        height: 100vh;
+
+        &__texto p{
+            margin: 30px 10px;
+        }
+
+        & img{
+            object-fit: cover;
+            width: 50%;
+            height: 100vh;
+        }
+
+    }
+
+    .product-display__lista{
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'prod1' 
+                             'prod2'
+                             'prod3' 
+                             'prod4'
+                             'prod5' 
+                             'prod6';
+    }
+
+    .brand-info{
+        &__display{
+            
+            flex-direction: column;
+            justify-content: center;
+
+            & li{
+                width: 100%;
+                text-align: center;
+            }
+
+            & img{
+                height: 100%;
+                width: 300px;
+            }
+
+        }
     }
 
 
@@ -534,6 +633,50 @@ $media-widths: (
     .products{
         height: 55rem;
     }
+
+    .nosotros-info{
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        &__texto p{
+            margin: 30px 10px;
+        }
+
+        & img{
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+
+    }   
+
+    .brand-info{
+
+        & h1{
+            text-align: center;
+        }
+
+        &__display{
+            
+
+            flex-direction: column;
+            justify-content: center;
+
+            & li{
+                width: 100%;
+                text-align: center;
+            }
+
+            & img{
+                height: 100%;
+            }
+
+        }
+    }
+
 
 
 }
