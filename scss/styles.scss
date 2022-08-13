@@ -482,9 +482,9 @@ $media-widths: (
 
     .encabezado{
     
-        &__logo img{
+        &__logo a img{
             object-fit: contain;
-            width: 100px;
+            width: 150px;
             height: 100%;
         }
 
